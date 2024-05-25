@@ -34,7 +34,8 @@ else
 fi
 
 rm -rf articles
-git clone --recursive "${ARTICLES_GIT_REPOSITORY_URL:?}" articles
+# git clone --recursive "${ARTICLES_GIT_REPOSITORY_URL:?}" articles
+cp -r ../articles .
 (cd articles && sh build.sh)
 rm -rf 'src/app/(articles)'
 cp -r articles/out 'src/app/(articles)'
