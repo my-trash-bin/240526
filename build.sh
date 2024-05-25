@@ -1,5 +1,4 @@
 #!/bin/sh
 
-echo 'No build script yet'
-
-exit 1
+npm i
+npm run build
