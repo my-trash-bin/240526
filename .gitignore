@@ -1,6 +1,15 @@
+# node
 /node_modules
 /package-lock.json
 
+# next
 /.next
 
-/.frontmatter
+# env
+.env
+.env.*
+!.env.sample
+
+# custom
+/out
+/articles
